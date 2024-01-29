@@ -18,10 +18,10 @@
             @endif
 
             <div class="post-details-bottom">
-                <span class="light-text">Authored by: </span> {{$post->post->author->name}} <span class="light-text">Posted at: </span> {{date('d M Y ', strtotime($post->post->posted_at))}}
+                <span class="light-text">Publicado por: </span> {{$post->post->author->name}} <span class="light-text">Fecha publicación: </span> {{date('d M Y ', strtotime($post->post->posted_at))}}
             </div>
             <div class='text-center'>
-                <a href="{{$post->url($locale, $routeWithoutLocale)}}" class="btn btn-primary">View Post</a>
+                <a href="{{$post->url($locale, $routeWithoutLocale)}}" class="btn btn-primary">Ver publicación</a>
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,15 +9,11 @@
     <link rel="shortcut icon" sizes="192x192" href="{{ asset('/img/favicon.png') }}">
     <title>Turismo Más – Buscador mundial de Turismo</title>
     @include('layouts.styles')
+    @yield('blog-custom-css')
 </head>
 
 <body>
-    <header>
-        @yield('banner')
-    </header>
-
     @yield('content')
-
     @yield('footer')
 
     @include('layouts.scripts')

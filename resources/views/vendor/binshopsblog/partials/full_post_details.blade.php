@@ -1,6 +1,7 @@
 @if(\Auth::check() && \Auth::user()->canManageBinshopsBlogPosts())
-    <a href="{{$post->edit_url()}}" class="btn btn-outline-secondary btn-sm pull-right float-right">Edit
-        Post</a>
+    <a href="{{$post->edit_url()}}" class="btn btn-outline-secondary btn-sm pull-right float-right">
+        Editar publicación
+    </a>
 @endif
 
 <h1 class='blog_title'>{{$post->title}}</h1>
@@ -23,7 +24,7 @@
 
 <hr/>
 
-Posted <strong>{{$post->post->posted_at->diffForHumans()}}</strong>
+Publicado <strong>{{$post->post->posted_at->diffForHumans()}}</strong>
 
 @includeWhen($post->author,"binshopsblog::partials.author",['post'=>$post])
 @includeWhen($categories,"binshopsblog::partials.categories",['categories'=>$categories])

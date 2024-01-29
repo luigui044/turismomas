@@ -8,3 +8,4 @@
  <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
 
  @yield('scripts')
+ @yield('blog-custom-js')

@@ -19,6 +19,6 @@
     @else
         {{--is not logged in, or User::canManageBinshopsBlogPosts() for current user == false--}}
         {{--show basic error message--}}
-        <div class='alert alert-danger'>Sorry, but there is an error showing that blog post. Please come back later.</div>
+        <div class='alert alert-danger'>Ha ocurrido un error al intentar mostrar esta publicación.</div>
     @endif
 @endif
