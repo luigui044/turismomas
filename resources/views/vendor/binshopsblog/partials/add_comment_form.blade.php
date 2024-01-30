@@ -1,9 +1,8 @@
 <div class='add_comment_area'>
-    <h5 class='text-center'>Añadir comentario</h5>
+    <h4 class='text-center'><b>Añadir comentario</b></h4>
     <form method='post'
         action='{{ route('binshopsblog.comments.add_new_comment', [app('request')->get('locale'), $post->slug]) }}'>
         @csrf
-
 
         <div class="form-group ">
             <label id="comment_label" for="comment">Tu comentario </label>
