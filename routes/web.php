@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CategoriasController;
+use App\Http\Controllers\EmpresasController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 /*
@@ -15,6 +17,15 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/elsalvador', [HomeController::class, 'elsalvador'])->name('elsalvador');
+
+// Rutas para categorías
+Route::get('/administracion/categorias', [CategoriasController::class, 'inicio'])->name('categorias');
+Route::post('/administracion/categorias/crear', [CategoriasController::class, 'agregar'])->name('categorias.agregar');
+Route::post('/administracion/categorias/actualizar/{id}', [CategoriasController::class, 'actualizar'])->name('categorias.actualizar');
+Route::delete('/administracion/categorias/eliminar/{id}', [CategoriasController::class, 'eliminar'])->name('categorias.eliminar');
+
+// Rutas para empresas
+Route::get('/administracion/empresas', [EmpresasController::class, 'inicio'])->name('empresas');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

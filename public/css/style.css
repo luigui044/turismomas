@@ -1,5 +1,18 @@
-.logo{
-width: 30%;    
+:root {
+    --verde: #56A3A6;
+}
+
+/* Estilos generales */
+.bg-verde {
+    background-color: var(--verde) !important;
+}
+
+.color-verde {
+    color: var(--verde) !important;
+}
+
+.logo {
+    width: 30%;
 }
 
 .top-nav-collapse {
@@ -11,12 +24,15 @@ width: 30%;
         background: #7d8488 !important;
     }
 }
+
 .hm-gradient .full-bg-img {
     background: -moz-linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
     background: -webkit-linear-gradient(45deg, rgba(242, 34, 50, 0.5), rgba(255, 187, 54, 0.6) 100%);
     background: linear-gradient(to 45deg, rgba(29, 236, 197, 0.4), rgba(96, 0, 136, 0.4) 100%);
 }
+
 @media (max-width: 740px) {
+
     .full-height,
     .full-height body,
     .full-height header,
@@ -25,16 +41,16 @@ width: 30%;
     }
 }
 
-.buscador{
-    background: rgba(255, 255, 255,.2);
-  padding-top: 13px;
-  padding-bottom: 1px;
-  padding-left: 12px;
-  padding-right: 5px;
-  border-radius: 6px;
+.buscador {
+    background: rgba(255, 255, 255, .2);
+    padding-top: 13px;
+    padding-bottom: 1px;
+    padding-left: 12px;
+    padding-right: 5px;
+    border-radius: 6px;
 }
 
-#seccion-buscador{
+#seccion-buscador {
     background: rgba(83, 79, 79, 0.155);
     padding-top: 13px;
     padding-bottom: 1px;
@@ -42,90 +58,106 @@ width: 30%;
     padding-right: 5px;
     border-radius: 6px;
 }
-.caption-buscador{bottom: 100px;}
 
-.clase-verdana{
-    font-family: Verdana, Geneva, sans-serif; font-size:2rem; font-style: normal; font-variant: normal; font-weight: bold; line-height: 26.4px; color:#54595F;
+.caption-buscador {
+    bottom: 100px;
 }
 
-.clase-verdana2{
-    font-family: Verdana, Geneva, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: normal; line-height: 26.4px; color:#54595F;
+.clase-verdana {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26.4px;
+    color: #54595F;
+}
+
+.clase-verdana2 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 26.4px;
+    color: #54595F;
 }
 
 
 .zoom-box {
 
-   
-  
-    transition: transform .5s; /* Animation */
-  }
-  
-  .zoom-box:hover {
+
+
+    transition: transform .5s;
+    /* Animation */
+}
+
+.zoom-box:hover {
     transform: scale(1.1);
     z-index: 9;
 
-  }
+}
 
 @font-face {
     font-family: 'Verdana Italic';
     font-style: normal;
     font-weight: normal;
     src: local('Verdana Italic'), url('/public/fonts/VERDANAI.woff') format('woff');
-    }
+}
 
 
 
-    .custom-shape-divider-top-1702517294 {
-       
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        /* transform: rotate(180deg); */
-    }
-    
-    .custom-shape-divider-top-1702517294 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 60px;
-    }
-    
-    .custom-shape-divider-top-1702517294 .shape-fill {
-        fill: #E3E3E3;
-    }
+.custom-shape-divider-top-1702517294 {
+
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* transform: rotate(180deg); */
+}
+
+.custom-shape-divider-top-1702517294 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.custom-shape-divider-top-1702517294 .shape-fill {
+    fill: #E3E3E3;
+}
 
 
 
 
 
-    .custom-shape-divider-top-17025172942 {
-       
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-    
-    .custom-shape-divider-top-17025172942 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 60px;
-    }
-    
-    .custom-shape-divider-top-17025172942 .shape-fill {
-        fill: #E3E3E3;
-    }
+.custom-shape-divider-top-17025172942 {
+
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-17025172942 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.custom-shape-divider-top-17025172942 .shape-fill {
+    fill: #E3E3E3;
+}
 
 
 
-.icono{
+.icono {
     transition-duration: 0.3s;
 }
 
-.icono:hover{
+.icono:hover {
     animation-name: elementor-animation-wobble-horizontal;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }

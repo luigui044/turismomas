@@ -7,18 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href="{{ asset('/img/favicon.png') }}" />
     <link rel="shortcut icon" sizes="192x192" href="{{ asset('/img/favicon.png') }}">
-    <title>Turismo Más – Buscador mundial de Turismo</title>
+    <title>Turismo Más – @yield('titulo')</title>
     @include('layouts.styles')
 </head>
 
 <body>
     <header>
-        @yield('banner')
+        @include('components.admin.navbar')
     </header>
 
-    @yield('content')
-
-    @yield('footer')
+    <main>
+        @yield('contenido')
+    </main>
 
     @include('layouts.scripts')
 </body>
